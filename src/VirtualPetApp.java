@@ -14,12 +14,28 @@ public class VirtualPetApp {
         needsMenu(dogName);
 
 
-        
+        do {
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+
+            select = userInput.nextInt();
+
+
+
+
+            dog.tick();
+        } while (select != 7);
 
 
     }
 
-    private static void showDogCurrentNeeds(DogNeeds dog){
+    private static void showDogCurrentNeeds(VirtualPet dog){
         System.out.println("Hunger: " + dog.getHunger());
         System.out.println("Thirst: " + dog.getThirst());
         System.out.println("Attention: " + dog.getAttention());
