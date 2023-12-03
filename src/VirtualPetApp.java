@@ -15,14 +15,14 @@ public class VirtualPetApp {
 
 
         do {
-            System.out.println("");
-            System.out.println("");
-            System.out.println("");
-            System.out.println("");
-            System.out.println("");
-            System.out.println("");
-            System.out.println("");
-            System.out.println("");
+            System.out.println("What would you like to do!");
+            System.out.println("[1] Go for a walk with " + dogName + " don't forget the leash.");
+            System.out.println("[2] Get " + dogName + " some clean water.");
+            System.out.println("[3] Play with " + dogName + " using their favorite toy!");
+            System.out.println("[4] Let " + dogName + " out to use the bathroom.");
+            System.out.println("[5] Let " + dogName + " get some rest.");
+            System.out.println("[6] Groom " + dogName + "'s precious coat!");
+            System.out.println("[7] Quit :( ");
 
             select = userInput.nextInt();
 
