@@ -32,7 +32,7 @@ public class VirtualPetApp {
             dog.tick();
         } while (select != 7);
 
-
+        userInput.close();
     }
 
     private static void showDogCurrentNeeds(VirtualPet dog){
@@ -78,6 +78,5 @@ public class VirtualPetApp {
                         "\n-----------------------------------------------------------------------------------------------"
         );
     }
-
 
 }
