@@ -16,7 +16,8 @@ public class VirtualPetApp {
 
         do {
             System.out.println("What would you like to do!");
-            System.out.println("[1] Go for a walk with " + dogName + " don't forget the leash.");
+            System.out.println("[0] Go for a walk with " + dogName + " don't forget the leash.");
+            System.out.println("[1] Feed " + dogName + " his favorite doggy snacks!");
             System.out.println("[2] Get " + dogName + " some clean water.");
             System.out.println("[3] Play with " + dogName + " using their favorite toy!");
             System.out.println("[4] Let " + dogName + " out to use the bathroom.");
@@ -26,7 +27,22 @@ public class VirtualPetApp {
 
             select = userInput.nextInt();
 
-
+            if (select == 7){
+                continue;
+            } 
+            else if (select == 0){
+                if (dog.getAttention() < 5){
+                    System.out.println("You might need to show more love to " + dogName + "!");
+                    continue;
+                }
+                System.out.println(dogName + " Really enjoyed that walk!");
+                dog.changeAttention(+1);
+                dog.changeEnergy(-1);
+                dog.changeHygiene(-1);
+            }
+            else if ( select == 1){
+                
+            }
 
 
             dog.tick();
