@@ -5,7 +5,7 @@ public class VirtualPetApp {
         int select;
 
         Scanner userInput = new Scanner(System.in);
-        System.out.println("Welcome to the world of being a pet owner i hope you're ready. Owning a pet takes a lot of work! Enter your dogs' name: ");
+        System.out.println("Welcome to the world of being a pet owner i hope you're ready. Owning a pet takes a lot of work! Enter your dogs name");
         String dogName = userInput.nextLine();
 
         VirtualPet dog = new VirtualPet(dogName);
@@ -87,7 +87,7 @@ public class VirtualPetApp {
                     System.out.println("Rest is not needed for " + dogName + " right now.");
                     continue;
                 }
-                System.out.println(dogName + " Enjoyed his nap a lot and i wagging his tail happily!");
+                System.out.println(dogName + " Enjoyed his nap a lot and is wagging his tail happily!");
                 dog.changeEnergy(+2);
                 dog.changeHunger(-1);
                 dog.changeThirst(-1);
