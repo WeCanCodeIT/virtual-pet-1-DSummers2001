@@ -107,7 +107,7 @@ public class VirtualPetApp {
                 dog.changeThirst(-1);
                 showDogCurrentNeeds(dog);
             } else {
-                continue;
+                System.out.println("You need to choose a proper input please try again.");
             }
 
             dog.tick();
