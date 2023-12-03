@@ -39,6 +39,8 @@ public class VirtualPetApp {
                 dog.changeAttention(+3);
                 dog.changeEnergy(-3);
                 dog.changeHygiene(-3);
+                dog.changeHunger(-3);
+                dog.changeThirst(-3);
                 showDogCurrentNeeds(dog);
             }
             else if ( select == 1){
