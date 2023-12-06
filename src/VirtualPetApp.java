@@ -37,11 +37,11 @@ public class VirtualPetApp {
                     continue;
                 }
                 System.out.println(dogName + " Really enjoyed that walk!");
-                dog.changeAttention(+5);
-                dog.changeEnergy(-3);
-                dog.changeHygiene(-3);
-                dog.changeHunger(-3);
-                dog.changeThirst(-3);
+                dog.changeAttention(+3);
+                dog.changeEnergy(-1);
+                dog.changeHygiene(-1);
+                dog.changeHunger(-1);
+                dog.changeThirst(-1);
                 showDogCurrentNeeds(dog);
             }
             else if ( select == 1){
