@@ -33,10 +33,11 @@ public class VirtualPetApp {
             else if (select == 0){
                 if (dog.getAttention() < 10){
                     System.out.println("You need to show more love to " + dogName + "!");
+                    showDogCurrentNeeds(dog);
                     continue;
                 }
                 System.out.println(dogName + " Really enjoyed that walk!");
-                dog.changeAttention(+3);
+                dog.changeAttention(+5);
                 dog.changeEnergy(-3);
                 dog.changeHygiene(-3);
                 dog.changeHunger(-3);
@@ -46,64 +47,73 @@ public class VirtualPetApp {
             else if ( select == 1){
                 if (dog.getHunger() > 10){
                     System.out.println(dogName + " isn't hungry right now.");
+                    showDogCurrentNeeds(dog);
                     continue;
                 }
                 System.out.println(dogName + " Loved that treat and wags his tail happily!");
-                dog.changeHunger(+3);
-                dog.changeEnergy(+3);
-                dog.changeAttention(+3);
-                dog.changeThirst(-3);
+                dog.changeHunger(+2);
+                dog.changeEnergy(+2);
+                dog.changeAttention(+1);
+                dog.changeThirst(-1);
+                dog.changeBladder(-1);
                 showDogCurrentNeeds(dog);
             }
             else if (select == 2){
                 if (dog.getThirst() > 10){
                     System.out.println(dogName + " does'nt want any water right now");
+                    showDogCurrentNeeds(dog);
                     continue;
                 }
                 System.out.println(dogName + " really enjoyed that water and thanks you with a happy bark!");
-                dog.changeThirst(+3);
-                dog.changeBladder(-3);
+                dog.changeThirst(+2);
+                dog.changeBladder(-1);
                 showDogCurrentNeeds(dog);
             }
             else if (select == 3){
                 if (dog.getAttention() > 10){
                     System.out.println(dogName + " does'nt want to play right now.");
+                    showDogCurrentNeeds(dog);
                     continue;
                 }
                 dog.changeAttention(+3);
-                dog.changeEnergy(-3);
+                dog.changeEnergy(-1);
+                dog.changeHunger(-1);
+                dog.changeThirst(-1);
                 showDogCurrentNeeds(dog);
             }
             else if (select == 4){
                 if (dog.getBladder() > 10){
                     System.out.println(dogName + " does'nt need to go to the bathroom yet.");
+                    showDogCurrentNeeds(dog);
                     continue;
                 }
                 System.out.println(dogName + " is really happy you let him out to use the bathroom!");
-                dog.changeBladder(+3);
-                dog.changeHygiene(-3);
+                dog.changeBladder(+2);
+                dog.changeHygiene(-1);
                 showDogCurrentNeeds(dog);
             }
             else if (select == 5){
                 if (dog.getEnergy() > 10){
                     System.out.println("Rest is not needed for " + dogName + " right now.");
+                    showDogCurrentNeeds(dog);
                     continue;
                 }
                 System.out.println(dogName + " Enjoyed his nap a lot and is wagging his tail happily!");
-                dog.changeEnergy(+3);
-                dog.changeHunger(-3);
-                dog.changeThirst(-3);
-                dog.changeBladder(-3);
+                dog.changeEnergy(+2);
+                dog.changeHunger(-1);
+                dog.changeThirst(-1);
+                dog.changeBladder(-1);
                 showDogCurrentNeeds(dog);
             }
             else if (select == 6){
                 if (dog.getHygiene() > 10){
                     System.out.println("Your " + dogName + " still has a clean and shiny coat!");
+                    showDogCurrentNeeds(dog);
                     continue;
                 }
                 System.out.println(dogName + " Enjoyed his grooming a lot is jumping in excitement");
-                dog.changeHygiene(+3);
-                dog.changeEnergy(-3);
+                dog.changeHygiene(+2);
+                dog.changeEnergy(-1);
                 showDogCurrentNeeds(dog);
             } else {
                 System.out.println("You need to choose a proper input please try again.");

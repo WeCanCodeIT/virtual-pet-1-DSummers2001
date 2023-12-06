@@ -123,12 +123,12 @@ public class VirtualPet{
 
 
     public void tick(){
-        this.hunger += 1;
-        this.thirst +=1;
-        this.attention +=1;
-        this.bladder += 1;
-        this.energy += 1;
-        this.hygiene +=1;
+        this.hunger +=0;
+        this.thirst +=0;
+        this.attention +=0;
+        this.bladder +=0;
+        this.energy +=0;
+        this.hygiene +=0;
     }
 
 }
