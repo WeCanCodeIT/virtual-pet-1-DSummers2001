@@ -131,4 +131,13 @@ public class VirtualPet{
         this.hygiene -=1;
     }
 
+
+    public void selfPreservation(){
+        if ((this.hunger <= 0) && (this.hunger <= this.thirst)){
+            this.hunger += 2;
+        } else {
+            this.thirst += 2;
+        }
+    }
+
 }

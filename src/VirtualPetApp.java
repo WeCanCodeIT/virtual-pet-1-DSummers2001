@@ -27,6 +27,13 @@ public class VirtualPetApp {
 
             select = userInput.nextInt();
 
+            if ((dog.getHunger() < -4) || (dog.getThirst() < -4)){
+                System.out.println(dogName + " has died :( ");
+                break;
+            }
+
+            dog.selfPreservation();
+            
             if (select == 7){
                 continue;
             } 
