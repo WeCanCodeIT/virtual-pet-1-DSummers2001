@@ -52,4 +52,15 @@ public class VirtualPetTest {
         assertEquals(0, cat.getEnergy());
         assertEquals(0, cat.getHygiene());
     }
+
+    @Test
+    void testSelfPreservation() {
+        cat.selfPreservation();
+        cat.tick();
+        cat.changeHunger(0);
+        cat.changeThirst(0);
+        assertEquals(0, cat.getHunger());
+        assertEquals(2, cat.getThirst());
+    }
+
 }
